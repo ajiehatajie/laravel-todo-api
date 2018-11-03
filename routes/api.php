@@ -37,6 +37,11 @@ Route::get('customer/{id}', 'API\V1\CustomerController@show');
 Route::post('customer/{id}/update', 'API\V1\CustomerController@update');
 Route::delete('customer/{id}', 'API\V1\CustomerController@destroy');
 
+Route::post('customer/{id}/follow', 'API\V1\CustomerController@followUp');
+
+Route::get('customer/{id}/follow', 'API\V1\CustomerController@FollowDetail');
+
+
 
 
 

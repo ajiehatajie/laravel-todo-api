@@ -44,4 +44,9 @@ class Customer extends Model
     {
         return __CLASS__ . " model has been {$eventName}";
     }
+
+    public function follow()
+    {
+        return $this->hasOne(Customer::class);
+    }
 }

@@ -4,7 +4,7 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 use Spatie\Activitylog\Traits\LogsActivity;
-
+use App\Customer;
 class Follow extends Model
 {
     use LogsActivity;
@@ -32,7 +32,11 @@ class Follow extends Model
     protected $fillable = ['costumer_id', 'follow_up', 'date_follow', 'result'];
 
     
-
+    public function follow()
+    {
+        return $this->hasOne(Customer::class);
+    }
+    
     /**
      * Change activity log event description
      *
