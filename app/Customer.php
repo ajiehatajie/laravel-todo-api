@@ -47,6 +47,6 @@ class Customer extends Model
 
     public function follow()
     {
-        return $this->hasOne(Customer::class);
+        return $this->hasOne(Customer::class,'customer_id');
     }
 }

@@ -5,6 +5,7 @@ namespace App;
 use Illuminate\Database\Eloquent\Model;
 use Spatie\Activitylog\Traits\LogsActivity;
 use App\Customer;
+
 class Follow extends Model
 {
     use LogsActivity;
@@ -37,6 +38,10 @@ class Follow extends Model
         return $this->hasOne(Customer::class);
     }
     
+    public function user()
+    {
+        return $this->belongsTo(Customer::class,'customer_id');
+    }
     /**
      * Change activity log event description
      *

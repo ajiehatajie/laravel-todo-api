@@ -41,6 +41,8 @@ Route::post('customer/{id}/follow', 'API\V1\CustomerController@followUp');
 
 Route::get('customer/{id}/follow', 'API\V1\CustomerController@FollowDetail');
 
+Route::get('follow/{userid}', 'API\V1\FollowController@show');
+
 
 
 
