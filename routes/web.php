@@ -32,4 +32,3 @@ Route::get('admin/generator', ['uses' => '\Appzcoder\LaravelAdmin\Controllers\Pr
 Route::post('admin/generator', ['uses' => '\Appzcoder\LaravelAdmin\Controllers\ProcessController@postGenerator']);
 
 Route::resource('admin/task', 'Admin\\TaskController');
-Route::resource('admin/customer', 'Admin\\CustomerController');
