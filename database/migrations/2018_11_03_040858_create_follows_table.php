@@ -17,7 +17,7 @@ class CreateFollowsTable extends Migration
             $table->timestamps();
             $table->integer('costumer_id')->nullable();
             $table->tinyInteger('follow_up')->nullable();
-            $table->date('date_follow')->nullable();
+            $table->timestamp('date_follow')->nullable();
             $table->text('result')->nullable();
             });
     }
