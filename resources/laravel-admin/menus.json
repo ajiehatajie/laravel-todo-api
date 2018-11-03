@@ -1,14 +1,1 @@
-{
-    "menus": [
-        {
-            "section": "Resources",
-            "items": [
-                
-                {
-                    "title": "Customer",
-                    "url": "\/admin\/customer"
-                }
-            ]
-        }
-    ]
-}
+{"menus":[{"section":"Resources","items":[{"title":"Customer","url":"\/admin\/customer"},{"title":"Follow","url":"\/admin\/follow"}]}]}

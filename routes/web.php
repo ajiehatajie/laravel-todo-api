@@ -33,3 +33,4 @@ Route::post('admin/generator', ['uses' => '\Appzcoder\LaravelAdmin\Controllers\P
 
 Route::resource('admin/task', 'Admin\\TaskController');
 Route::resource('admin/customer', 'Admin\\CustomerController');
+Route::resource('admin/follow', 'Admin\\FollowController');
